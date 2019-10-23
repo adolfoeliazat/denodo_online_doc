@@ -1,0 +1,85 @@
+{# 
+Template to add the name of the guide to the title.
+
+When changing this, consider that I (csantos@2018/03/05) do not like that before, we had "Denodo Platform Online Documentation version" at the end of every title so I removed it. The reasons are:
+ 
+-  It makes the title long
+-  In the search results of the community, it looks redundant to see "Denodo Platform Online Documentation version" for each result.
+    
+#}
+
+{% extends "!layout.html" %}
+{% block htmltitle %}
+
+{% if pagename.startswith('itpilot/developer/') %}
+
+  <title>{{ title|striptags|e }} &mdash; ITPilot Developer Guide</title>
+
+{% elif pagename.startswith('itpilot/dextl/') %}
+
+  <title>{{ title|striptags|e }} &mdash; ITPilot DEXTL Guide</title>
+
+{% elif pagename.startswith('itpilot/generation_environment/') %}
+
+  <title>{{ title|striptags|e }} &mdash; ITPilot Generation Environment Guide</title>
+
+{% elif pagename.startswith('itpilot/nseql/') %}
+
+  <title>{{ title|striptags|e }} &mdash; ITPilot NSEQL Guide</title>
+
+{% elif pagename.startswith('itpilot/user_guide/') %}
+
+  <title>{{ title|striptags|e }} &mdash; ITPilot User Guide</title>
+
+{% elif pagename.startswith('platform/installation/') %}
+
+  <title>{{ title|striptags|e }} &mdash; Installation Guide</title>
+
+{% elif pagename.startswith('platform/migration/') %}
+
+  <title>{{ title|striptags|e }} &mdash; Migration Guide</title>
+
+{% elif pagename.startswith('platform/new_features/') %}
+
+  <title>{{ title|striptags|e }} &mdash; New Features Guide</title>
+
+{% elif pagename.startswith('scheduler/administration/') %}
+
+  <title>{{ title|striptags|e }} &mdash; Scheduler Administration Guide</title>
+
+{% elif pagename.startswith('solution_manager/administration/') %}
+
+  <title>{{ title|striptags|e }} &mdash; Solution Manager Administration Guide</title>
+
+{% elif pagename.startswith('solution_manager/installation/') %}
+
+  <title>{{ title|striptags|e }} &mdash; Solution Manager Installation Guide</title>
+
+{% elif pagename.startswith('solution_manager/web_panel/') %}
+
+  <title>{{ title|striptags|e }} &mdash; Web Panel Guide</title>
+
+{% elif pagename.startswith('vdp/administration/') %}
+
+  <title>{{ title|striptags|e }} &mdash; Virtual DataPort Administration Guide</title>
+
+{% elif pagename.startswith('vdp/data_catalog/') %}
+
+  <title>{{ title|striptags|e }} &mdash; Data Catalog Guide</title>
+
+{% elif pagename.startswith('vdp/developer/') %}
+
+  <title>{{ title|striptags|e }} &mdash; Virtual DataPort Developer Guide</title>
+
+{% elif pagename.startswith('vdp/dmt/') %}
+
+  <title>{{ title|striptags|e }} &mdash; Diagnostic and Monitoring Tool Guide</title>
+
+{% elif pagename.startswith('vdp/vql/') %}
+
+  <title>{{ title|striptags|e }} &mdash; VQL Guide </title>
+
+{%- else %}
+  <title>{{ title|striptags|e }}</title>
+{%- endif %}
+{% endblock %}

@@ -1,0 +1,153 @@
+/* override table width restrictions */
+.wy-table-responsive table td, .wy-table-responsive table th {
+   white-space: normal;
+}
+
+.wy-table-responsive {
+   margin-bottom: 24px;
+   max-width: 100%;
+   overflow: visible;
+}
+
+.wy-table caption, .rst-content table.docutils caption, .rst-content table.field-list caption
+   {
+   color: #000;
+   font: italic 85%/1 arial, sans-serif;
+   padding: 1em 0;
+   text-align: left
+}
+
+.rst-content tt.literal, .rst-content tt.literal, .rst-content code.literal
+   {
+   color: #000;
+}
+
+.wy-nav-content-wrap {
+   background: #fcfcfc;
+}
+
+.wy-menu-vertical li.toctree-l3, .wy-menu-vertical li.toctree-l4 {
+   font-size: 1em;
+}
+
+a.reference.external::after {
+   content: "\f08e";
+   font-family: FontAwesome;
+   box-sizing: border-box;
+   padding-left: 3px;
+}
+
+.rst-content div.important p.admonition-title::before {
+   content: "\f024";
+}
+
+.rst-content div.warning p.admonition-title::before {
+   content: "\f071";
+}
+
+.rst-content .section ul > li > ul > li > ul > li > ul > li > ul > li > ul > li
+{
+   list-style: square;
+}
+
+
+.rst-content .section ul > li > ul > li > ul > li > ul > li > ul > li
+{
+   list-style: circle;
+}
+
+.rst-content .section ol.loweralpha li > ul > li
+, .rst-content .section ul > li > ul > li > ul > li > ul > li 
+{
+   list-style: disc;
+}
+
+.rst-content .section ol.lowerroman, .rst-content .section ol.lowerroman > li
+   {
+   list-style: lower-roman;
+}
+
+.rst-content .section ol.arabic, .rst-content .section ol.arabic > li
+{
+   list-style: decimal;
+}
+
+.rst-content .section ol.loweralpha, .rst-content .section ol.loweralpha > li {
+   
+   list-style: lower-alpha;
+}
+
+.document p, .document li {
+   margin-bottom: 6px;
+   margin-top: 6px;
+}
+
+tbody tr td p {
+   /*
+    * 2016/03/27: if there is a paragraph inside the table it has to have the same font size as in cells that do not have
+    * a paragraph. Without this definition, the paragraphs inside tables would have the same font size as paragraphs outside tables.
+    */
+   font-size: 100%;
+}
+
+/* 
+ * Contents box at the top of the page
+ */
+div.contents {
+   padding: 0 .5em .5em
+}
+
+div.contents.long-toc {
+   max-width: 100%;
+   float: none;
+   margin-left: 0
+}
+
+div.contents li {
+   padding-top: .25em;
+   column-break-inside: avoid;
+   list-style-position: inside
+}
+
+div.contents.twocols ul {
+   margin: 0;
+   padding-left: 1em;
+   -webkit-column-count: 2;
+   -moz-column-count: 2;
+   -ms-column-count: 2;
+   -o-column-count: 2;
+   column-count: 2;
+   -webkit-column-gap: 10px;
+   -moz-column-gap: 10px;
+   -ms-column-gap: 10px;
+   -o-column-gap: 10px;
+   column-gap: 10px;
+   columns: 2;
+}
+
+div.contents.threecols ul {
+   margin: 0;
+   /* padding-left: 1em; */
+   -webkit-column-count: 3;
+   -moz-column-count: 3;
+   -ms-column-count: 3;
+   -o-column-count: 3;
+   column-count: 3;
+   -webkit-column-gap: 10px;
+   -moz-column-gap: 10px;
+   -ms-column-gap: 10px;
+   -o-column-gap: 10px;
+   column-gap: 10px;
+   columns: 3;
+}
+
+div.highlight-batch div.highlight pre
+, div.highlight-bash div.highlight pre
+, div.highlight-none div.highlight pre 
+{
+    white-space: pre-wrap;
+}
+
+img.figure-border {
+   border: 1px solid #e1e4e5;
+}

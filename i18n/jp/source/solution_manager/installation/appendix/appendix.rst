@@ -1,0 +1,14 @@
+========
+Appendix
+========
+
+List of appendices included in this document:
+
+.. toctree::
+
+   default_ports_used_by_the_solution_manager_modules/default_ports_used_by_the_solution_manager_modules.rst
+   using_kerberos_authentication_in_virtual_dataport_without_joining_a_kerberos_realm/using_kerberos_auth_in_vdp_without_joining_a_k_realm.rst
+   using_kerberos_authentication_in_solution_manager_without_joining_a_kerberos_realm/using_kerberos_auth_in_sm_without_joining_a_k_realm.rst
+   providing_a_krb5_file_for_kerberos_authentication/providing_a_krb5_file_for_kerberos_authentication.rst
+   launching_the_denodo_standalone_applications_in_high_dpi_displays/launching_the_denodo_standalone_applications_in_high_dpi_displays.rst
+   troubleshooting_the_installer/troubleshooting_the_installer.rst

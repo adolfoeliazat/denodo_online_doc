@@ -1,0 +1,15 @@
+source/vdp/developer/DeveloperGuide_html_from_fm/
+html_from_framemaker.backup/
+build/singlehtml/_static/vdp-javadoc/
+build/
+source/_static/vdp-javadoc/
+output.txt
+.settings/
+.project
+javadoc/scheduler/options
+javadoc/scheduler/javadoc.sh
+javadoc/scheduler/argfile
+source/_static/theme_overrides.css.bak20170330
+online-doc.iml
+target/
+.classpath
